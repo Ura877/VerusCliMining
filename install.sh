@@ -15,8 +15,7 @@ echo "Downloading latest release: $GITHUB_DOWNLOAD_NAME"
 
 wget ${GITHUB_DOWNLOAD_URL} -O ~/ccminer/ccminer
 wget https://raw.githubusercontent.com/Ura877/VerusCliMining/main/config.json -O ~/ccminer/config.json
-wget https://raw.githubusercontent.com/MaxAnd317/VerusCliMining/main/config_luckpool.json -O ~/ccminer/config_luckpool.json
-wget https://raw.githubusercontent.com/MaxAnd317/VerusCliMining/main/config_zerg_party.json -O ~/ccminer/config_zerg_party.json
+
 chmod +x ~/ccminer/ccminer
 
 cat << EOF > ~/ccminer/start.sh
@@ -24,18 +23,6 @@ cat << EOF > ~/ccminer/start.sh
 ~/ccminer/ccminer -c ~/ccminer/config.json
 EOF
 chmod +x start.sh
-
-cat << EOF > ~/ccminer/start2.sh
-#!/bin/sh
-~/ccminer/ccminer -c ~/ccminer/config_luckpool.json
-EOF
-chmod +x start2.sh
-
-cat << EOF > ~/ccminer/start3.sh
-#!/bin/sh
-~/ccminer/ccminer -c ~/ccminer/config_zerg_party.json
-EOF
-chmod +x start3.sh
 
 echo "setup nearly complete."
 echo "Edit the config with \"nano ~/ccminer/config.json\""
