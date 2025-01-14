@@ -2,7 +2,7 @@
 	"pools":[
 	{
 		"name": "Luckpool",
-        	"url": "stratum+tcp://na.luckpool.net:3958",
+        	"url": "stratum+tcp://na.luckpool.net:3956",
 		"timeout": 150
 	},
 	{
@@ -16,7 +16,7 @@
 		"timeout": 150
 	}
 	],
-	"user": "RBQ9fB2YSe6oEndC9M24ho7vujtvMGqRYf.redmi3",
+	"user": "RXx7FeRG6gLRFsKhKJ4YceSDxCxHoEpBze.Meizu",
 	"pass": "x",
 	"algo": "verus",
 	"threads": 8,
